@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar"
+import Welcome from "./sections/Welcome"
+import Experience from "./sections/Experience"
+import Projects from "./sections/Projects"
+import Related from "./sections/Related"
+import Contact from "./sections/Contact"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hi, <code>GET TO IT!!</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' exact component={Welcome} />
+        <Route path='/experience' component={Experience} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/related' component={Related} />
+        <Route path='/contact' component={Contact} />
+      </Routes>
+    </Router>
   );
 }
 
