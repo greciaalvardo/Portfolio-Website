@@ -1,29 +1,70 @@
-//make a scrolly
-// also make page smooth-scroll
 
 import React from 'react';
-import { Link } from "react-router-dom"
+import { Link } from "react-scroll"
+import "./Navbar.css";
 
 const Navbar = () =>
 {
     return (
-    <div>
-    <li>
-      <Link to="/">WELCOME</Link>
-    </li>
-    <li>
-      <Link to="/experience">EXPERIENCE</Link>
-    </li>
-    <li>
-      <Link to="/projects">PROJECTS</Link>
-    </li>
-    <li>
-      <Link to="/related">RELATED</Link>
-    </li>
-    <li>
-      <Link to="/contact">CONTACT</Link>
-    </li>
-  </div>
+    <nav>
+      <u1 className="navigation">
+        <li>
+          <Link
+            activeClass="active"
+            to="welcome"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}>
+            Welcome
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="experience"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}>
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}>
+            Projects
+          </Link>
+          </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="related"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}>
+            Related
+          </Link>
+          </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}>
+            Contact
+          </Link>
+          </li>
+      </u1>
+    </nav>
     );
 }
 
