@@ -1,28 +1,25 @@
-
 import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar"
+import Welcome from "./sections/Welcome"
+import Experience from "./sections/Experience"
+import Projects from "./sections/Projects"
+import Related from "./sections/Related"
+import Contact from "./sections/Contact"
 
 function App() {
   return (
+    <main>
     <div className="App">
       <Navbar />
-      <div id="welcome">
-        <h1>Welcome</h1>
-      </div>
-      <div id="experience">
-        <h1>Experience</h1>
-      </div>
-      <div id="projects">
-        <h1>Projects</h1>
-      </div>
-      <div id="related">
-        <h1>Related</h1>
-      </div>
-      <div id="contact">
-        <h1>Contact</h1>
-      </div>
+      <Welcome />
+      <Experience/>
+      <Projects/>
+      <Related/>
+      <Contact/>
     </div>
+</main>
+
   );
 }
 

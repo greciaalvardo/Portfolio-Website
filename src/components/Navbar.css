@@ -1,14 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 .navigation {
     display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
     justify-content: space-around;
-    width: 100%;
-    padding: 20px 0;
+    width: 55%;
+    padding: 20px;
     position: fixed;
-    background-color: rgb(140, 140, 205);
-    top: 0;
+    color: white;
+    background-color: rgba(34, 36, 54, 0.7);
+    top: 5%;
+    left: 40%;
+
     list-style-type: none;
   }
   
   li {
     cursor: pointer;
+  }
+
+  .active {
+    background-color: rgba(34, 36, 54, 0.7);;
+    padding: 20px;
   }

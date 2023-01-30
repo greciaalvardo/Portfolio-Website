@@ -1,13 +1,18 @@
 import React from 'react';
+import "./Related.css";
 
 
 const Related = () =>
 {
-    <div>
-        <h3>
-            RELATED!! :p
-        </h3>
+    return (
+    <div className = "RELATED">
+        <div id="related">
+            <h1>
+                Related
+            </h1>
+        </div>
     </div>
+    );
 }
 
 export default Related;

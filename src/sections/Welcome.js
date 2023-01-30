@@ -1,13 +1,18 @@
 import React from 'react';
+import "./Welcome.css";
 
 
 const Welcome = () =>
 {
-    <div>
-        <h3 style={{color:"green"}}>
-            Welcome! :p
-        </h3>
+    return (
+    <div className = "WELCOME">
+        <div id="welcome">
+            <h1>
+                Welcome
+            </h1>
+        </div>
     </div>
+    );
 }
 
 export default Welcome;
